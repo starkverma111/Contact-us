@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <style>
+      * {
+        font-family: 'Inter', sans-serif;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      .form-control:focus {
+        border-color: #7e8287bf;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px rgb(132 134 137 / 48%);
+      }
+
+      input,
+      input::placeholder {
+        font-size: 1rem;
+      }
+
+      p {
+        letter-spacing: 0.5px;
+      }
+
+      #img3 {
+        filter: drop-shadow(5px 5px 5px #222);
+      }
+
+      .btn {
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+      }
+
+      @media only screen and (max-width: 540px) {
+        body {}
+
+        #cc {
+          padding: 10px 10px 10px 10px !important;
+        }
+      }
+
+      .container {
+        transition: flex 0.6s ease-in-out, max-width 0.5s ease-in-out;
+        transition: flex 0.75s cubic-bezier(0.23, 1, 0.32, 1),
+          max-width 0.75s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+    </style>
+    <title>Contact Us</title>
+  </head>
+  <body class="bg-light">
+    <section>
+      <div class="container-fluid mt-5">
+        <h1 class="fw-bolder text-center">Contact Us</h1>
+        <hr style="width:40%;" class="m-auto mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6 pb-4">
+              <div class="p-5 mt-5 ms-4 me-4" id="cc">
+                <h2 class="fw-bolder">Contact Us</h2>
+                <p>Ways to Get in Touch With Us | <b>Follow the instructions.</b>
+                </p>
+                <div class="mb-4 mt-4">
+                  <label for="text" class="form-label fw-bold">Full Name</label>
+                  <input type="text" class="form-control form-control-lg shadow-sm" id="name" name="name" placeholder="Name*" autocomplete="off">
+                </div>
+                <div class="mb-4 mt-4">
+                  <label for="email" class="form-label fw-bold">E-mail</label>
+                  <input type="email" class="form-control form-control-lg shadow-sm" id="email" name="email" placeholder="jhon@gmail.com*" autocomplete="off">
+                </div>
+                <div class="mb-4">
+                  <label for="password" class="form-label fw-bold">Your Message</label>
+                  <textarea class="form-control shadow-sm" placeholder="Message*" style="height: 140px"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-dark btn-lg lh-base mb-1 p-3 shadow" type="button">Submit </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 p-0 m-0">
+              <img src="../sign/pic3.png" class="img-fluid p-5 m-0" style=" object-fit: cover; background-repeat: no-repeat;" id="img3" />
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-muted mt-4">Crafted with love by <a href="#" class="text-decoration-none" target="_blank">Stark Verma</a>
+        </p>
+    </section>
+  </body>
+</html>
